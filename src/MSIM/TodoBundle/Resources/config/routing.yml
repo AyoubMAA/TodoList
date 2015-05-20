@@ -1,0 +1,12 @@
+msim_todo_homepage:
+    path:     /list
+    defaults: { _controller: MSIMTodoBundle:Todo:index }
+
+msim_todo_view:
+    path:     /view/{id}
+    defaults: { _controller: MSIMTodoBundle:Todo:view }
+
+msim_todo_add:
+    path:     /add
+    defaults: { _controller: MSIMTodoBundle:Todo:add }
+    

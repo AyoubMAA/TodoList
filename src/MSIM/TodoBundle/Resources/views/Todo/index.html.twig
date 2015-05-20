@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>TODO.COM</title>
+		
+		<style type="text/css">
+			a:link{
+				text-decoration:none
+			}
+		</style>
+</head>
+<body>
+	<h1>TODO.COM <button><a href="{{path('msim_todo_add')}}" style="font-size:30px;">+</a></button></h1>
+	
+
+	<h4>A faire:</h4>
+	<ul>
+
+		{% for todo in todos %}
+		<li><a href="{{ path('msim_todo_view', { 'id': todo.id }) }}">{{todo.nom}}</a></il>
+		{% endfor %}
+
+	</ul>
+
+	<h4>MALAHAKCH Ayoub MSIM</h4>
+
+</body>
+</html>

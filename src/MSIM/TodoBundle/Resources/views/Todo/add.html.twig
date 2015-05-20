@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>TODO.COM</title>
+	<style type="text/css">
+			a:link{
+				text-decoration:none
+			}
+	</style>
+</head>
+<body>
+	<h1>AJOUTER</h1>
+	<br><br>
+	<form action="{{path('msim_todo_add')}}" method="post">
+		<table>
+			<tr><th>Ajouter une chose à faire :</th><td><input type="text" name="nom" required></td></tr>
+			<tr><th>Description de la chose à faire :</th><td><textarea rows="4" cols="20" name="description" required></textarea></td></tr>
+			<tr><th>Faire au plus tard :</th><td><input type="date" name="dateT" min="{{dateA}}" required><input type="time" name="timeT" required></td></tr>
+			<tr><td><input type="submit" name="valider" value="valider"></td><td><button><a href="{{path('msim_todo_homepage')}}">retour</a></button></td></tr>
+		</table>
+
+	</form>
+<h4>MALAHAKCH Ayoub MSIM</h4>
+</body>
+</html>

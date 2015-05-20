@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>TODO.COM</title>
+	<style type="text/css">
+			a:link{
+				text-decoration:none
+			}
+	</style>
+</head>
+<body>
+	<h1>TODO.COM</h1>
+	<p><b style="font-size:20px">{{todo.nom}} :</b> <br>
+		<br><b>A faire avant le </b>{{todo.dateT|date('Y-m-d H:i:s')}}</p>
+		<bR><b>Description</b>
+			<br><p>{{todo.description}}</p>
+	<button><a href="{{path('msim_todo_homepage')}}">retour</a></button>
+
+<h4>MALAHAKCH Ayoub MSIM</h4>
+</body>
+</html>

@@ -1,0 +1,4 @@
+msim_todo:
+    resource: "@MSIMTodoBundle/Resources/config/routing.yml"
+    prefix:   /
+
